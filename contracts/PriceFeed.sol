@@ -1,10 +1,9 @@
 // SPDX-License-Identifier: MIT
-// This example code is designed to quickly deploy an example contract using Remix.
-pragma solidity ^0.6.7;
+pragma solidity 0.6.6;
 
 import "@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol";
 
-contract PriceConsumerV3 {
+contract PriceFeed {
     AggregatorV3Interface internal priceFeedEth;
     AggregatorV3Interface internal priceFeedUSDC;
     AggregatorV3Interface internal priceFeedBNB;

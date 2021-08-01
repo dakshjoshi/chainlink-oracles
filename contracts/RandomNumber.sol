@@ -1,16 +1,9 @@
 // SPDX-License-Identifier: MIT
-/** This example code is designed to quickly deploy an example contract using Remix.
- *  If you have never used Remix, try our example walkthrough: https://docs.chain.link/docs/example-walkthrough
- *  You will need testnet ETH and LINK.
- *     - Kovan ETH faucet: https://faucet.kovan.network/
- *     - Kovan LINK faucet: https://kovan.chain.link/
- */
-
 pragma solidity 0.6.6;
 
 import "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol";
 
-contract RandomNumberConsumer is VRFConsumerBase {
+contract RandomNumbers is VRFConsumerBase {
     bytes32 internal keyHash;
     uint256 internal fee;
 
